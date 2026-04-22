@@ -7,7 +7,7 @@ const app = express();
 const upload = multer({ dest: "uploads/" });
 
 const HF_API_URL = "https://api-inference.huggingface.co/models/timbrooks/instruct-pix2pix";
-const HF_API_KEY = process.env.HF_API_KEY; // set in .env
+const HF_API_KEY ="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"; // set in .env
 
 // Endpoint: upload image + prompt
 app.post("/generate", upload.single("image"), async (req, res) => {
